@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script LANGUAGE="JavaScript1.2">
+			function Scrape()
+			{
+				var objDownload = new ActiveXObject("ClassLibrary1.UCImageCapture");
+			
+				try
+				{
+				    objDownload.GetImage();
+				}
+				catch(exception) {
+					alert("Failed");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<table align="center"> 
+			<td>
+				<a href="javascript:Scrape()">Invoke Component</a>
+			</td>
+		</table>
+		<p>Please Wait...Downloading components...</p>
+		<object name="secondobj" id='TestActivex'  classid='CLSID:5D03FABF-52C3-45d9-A48A-EFB6D64C9477'></object>
+	</body>
+</html>
